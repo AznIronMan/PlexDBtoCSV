@@ -1,0 +1,5 @@
+.headers on
+.mode csv
+.output data.csv
+.read plex_sql.txt
+.quit
