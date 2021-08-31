@@ -14,8 +14,7 @@ namespace PlexDBtoCSV
             String Database = args[1];
             String SQLite = "sqlite3.exe";
             String SQLExec = "plex_exec.txt";
-            String parms = "\"" + Database + "\" -init " + SQLExec + " .exit";
-            Console.WriteLine(parms);
+            String parms = "-batch -interactive \"" + Database + "\" -init " + SQLExec + " .exit";
             StartIt(SQLite, parms);
             return;
         }
